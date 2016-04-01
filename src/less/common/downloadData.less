@@ -1,0 +1,91 @@
+/****数据下载--start*****/
+.downloadBox{
+	position:fixed;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 510px;
+	background:#202427;
+	z-index:10001;
+	box-shadow:0 0 8px rgba(22,5,7,0.3);
+	width:460px;
+	border-radius: 0 0 4px 4px;
+	.dTitle{
+		height:50px;
+		line-height:50px;
+		color:#fff;
+		font-size:16px;
+		padding:0 25px;
+		font-weight: bold;
+		background:#56636b;
+		border-radius: 4px 4px 0 0;
+		.dTitleText{
+			display: inline-block;
+			text-align:left;
+		}
+		.dIcon{
+			width:18px;
+			height:18px;
+			background:url(http://s.xnimg.cn/external/matrix/images/icon_list.png);
+			background-position: -1px -3px;
+		}
+		.dBoxClose{
+			display: block;
+			float:right;
+			margin-top:16px;
+			background-position: -1px -71px;
+			cursor:pointer;
+		}
+	}
+	.listContent{
+		color: #fff;
+		padding: 45px 30px;
+		height: 300px;
+		overflow-y: scroll;
+		.father-input{
+			font-size: 14px;
+			font-family: bold;
+			.child-input{
+				display: inline-block;
+				padding:20px 0px 20px 22px;
+				color: #8e9db1;
+				font-size: 12px; 
+			}
+		} 
+		&::-webkit-scrollbar{
+			width: 12px;
+		}
+		&::-webkit-scrollbar-thumb{
+			width: 8px;
+		    background-color: #56636b;
+		    border-radius: 6px;
+		    border: 2px solid transparent;
+		    background-clip: content-box;
+		}
+	}
+	.dFooter{
+		color: #fff;
+		.dButton{
+			display: inline-block;
+			float: right;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 4px;
+			height: 40px;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+		.dDownload{
+			width: 160px;
+			background-color: #f14e4e;
+		}
+		.dCancle{
+			width: 100px;
+			background-color: #56636b;
+		}
+		
+	}
+}
+/*****数据下载--end****/

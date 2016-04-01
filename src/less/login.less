@@ -1,0 +1,70 @@
+//2016.03.03
+/*** 登陆页 ***/
+body{
+    width:100%;
+    height: 100%;
+    background: url(http://s.xnimg.cn/external/matrix/images/login_bg.jpg) no-repeat;
+    background-size: 100%;
+}
+.login-box{
+    position: fixed; 
+    top: -1200px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    width: 760px;
+    height: 438px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #264151;
+    .png{background: url(http://s.xnimg.cn/external/matrix/images/login_icon.png) no-repeat;}
+    .left{
+        float: left;
+        width: 270px;
+        height: 100%;
+        background: url(http://s.xnimg.cn/external/matrix/images/login_left.png) no-repeat;
+    }
+    .right{
+        float: left;
+        width: 450px;
+        height: 100%;
+        padding-left: 40px;
+        .text{
+            height: 120px;
+            line-height: 120px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        input{
+            width: 340px;
+            height: 30px;
+            padding: 10px 60px 0 10px;
+            margin-top: 20px;
+            color: #fff;
+            border:0px;
+            border-bottom: 1px solid #3a5463;
+            &.user-name{background-position: 390px 10px;}
+            &.password{background-position: 390px -135px;}
+        }
+        .submit-login{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            margin: 110px 0 0 308px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+            color: #fff;
+            background: #f14e4e;
+        }
+    }
+    .connect{
+        position: absolute;
+        bottom: -35px;
+        left: 215px;
+        font-size: 12px;
+        color: #fff;
+    }
+}

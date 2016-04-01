@@ -1,0 +1,399 @@
+//2016.03.03
+.fundHold{
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #56636b;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+    .left{
+
+        width:200px;
+        float:left;
+        height:900px;
+        border:#fff solid 1px;
+    }
+    .mainCont{
+        margin: 60px 0 0 90px;
+        overflow: hidden;
+        .table-tab{
+            position: relative;
+            width: 100%;
+            height: 45px;
+            margin-top:10px;
+            background: #141618;
+            box-sizing: border-box;
+            border-bottom: 6px solid #616a76;
+            .tabs{
+                position: absolute;
+                width: 158px;
+                height: 36px;
+                bottom: -6px;
+                left: 16px;
+                line-height: 36px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                background: url(http://s.xnimg.cn/external/matrix/images/index-tabs.png) no-repeat;
+            }
+            .addCost{
+                margin-right:10px;
+            }
+            .callCost{
+                margin-right:20px;
+            }
+            .addCost,.callCost{
+                float:right;
+                display: block;
+                width:87px;
+                height:30px;
+                line-height: 30px;
+                border-radius:5px;
+                border:solid 1px #d1d1d1;
+                color:#dedede;
+                font-size:12px;
+                text-align:center;
+            }
+        }
+        .tabNext{
+            margin-top:43px;
+        }
+        .boxCharts{
+            border:1px solid #616a76;
+            .leftBox{
+                height:458px;
+                overflow: hidden;
+                color:#fff;
+                border-right: #374148 solid 1px;
+                background: #202427;
+                .tit{
+                    h3{
+                        font-size:14px;
+                        float:left;
+                        color:#fff;
+                        margin-right:10px;
+                        width:80px;
+                        height:50px;
+                        line-height: 50px;
+                        text-indent:18px;
+                    }
+                    .line{
+                        height:24px;
+                        overflow: hidden;
+                        border-bottom: #374148 solid 1px;
+                    }
+                }
+                .cont{
+                    padding:0 18px;
+                    border-bottom:#374148 solid 2px;
+                    li{
+                        float:left;
+                        width:33.33%;
+                        margin-bottom:20px;
+                        .title{
+                            color:#9eacbf;
+                            font-size:12px;
+                        }
+                        .amount{
+                            color:#9eacbf;
+                            font-size:16px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .chartArea{
+                    position: relative;
+                    .time-select{
+                        position: absolute;
+                        left: 190px;
+                        width: 96px;
+                        height: 25px;
+                        line-height: 23px;
+                        text-align: center;
+                        margin: 8px 12px 0 0;
+                        cursor: pointer;
+                        background: #374148;
+                        color: #fff;
+                        font-size: 12px;
+                        border: 1px solid #5a6975;
+                        border-radius: 4px;
+                        z-index: 1;
+                    }
+                    .compare-select{
+                        position: absolute;
+                        left: 5px;
+                        width: 156px;
+                        height: 23px;
+                        padding-left: 12px;
+                        line-height: 23px;
+                        text-align: left;
+                        margin: 8px 12px 0 0;
+                        cursor: pointer;
+                        background: #374148;
+                        color: #fff;
+                        font-size: 12px;
+                        border: 1px solid #5a6975;
+                        border-radius: 4px;
+                        z-index: 1;
+                        i.icon-down{
+                            position: absolute;
+                            width: 11px;
+                            height: 6px;
+                            top: 8px;
+                            right: 10px;
+                            background: url(http://s.xnimg.cn/external/matrix/images/images1.png) no-repeat;
+                            background-position: -233px -103px;
+                        }
+                    }
+                }
+            }
+            .rightBox{
+                width:428px;
+                height:458px;
+                float:right;
+                background: #202427;
+                .tit{
+                    h3{
+                        float:left;
+                        color:#fff;
+                        padding-top:16px;
+                        margin-right:10px;
+                        width:80px;
+                        font-size:14px;
+                        text-indent:18px;
+                    }
+                    .line{
+                        overflow: hidden;
+                        border-bottom:#374148 solid 1px;
+                        height:25px;
+
+                    }
+                }
+                .bingWrap{
+                    .charts{
+                        width:250px;
+                        float:left;
+                    }
+                    .charts-list{
+                        overflow: hidden;
+                        height: 426px;
+                        line-height: 426px;
+                        overflow-y: scroll;
+                        // display: table-cell;
+                        // vertical-align: middle;
+                        &::-webkit-scrollbar{
+                            width: 12px;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            width: 8px;
+                            background-color: #56636b;
+                            border-radius: 6px;
+                            border: 2px solid transparent;
+                            background-clip: content-box;
+                        }
+                        .listName{
+                            color:#9eacbf;
+                            font-size:12px;
+                            margin-right: 5px;
+                            li{
+                                height:42.8px;
+                                line-height:42.8px;
+                                text-indent:27px;
+                                position:relative;
+                                white-space: nowrap;
+                                overflow:hidden;
+                                span{
+                                    display: inline-block;
+                                    background-color: #eee;
+                                    width: 6px;
+                                    height: 16px;
+                                    margin-right: 7px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+        .listBox{
+            color:#fff;
+            border:1px solid #616a76;
+            &>li{
+                float:left;
+                width:33.24%;
+                border-right:solid 1px #616a76;
+                border-bottom: 1px solid #545a62;
+                background-color: #202427;
+                .liTit{
+                    padding:23px 0 20px 18px;
+                    font-size:14px;
+                    font-weight:700;
+                }
+                .cont{
+                    padding-left:18px;
+                    li{
+                        float:left;
+                        width:50%;
+                        margin-bottom:16px;
+                        .title{
+                            color:#9eacbf;
+                            font-size:12px;
+                            margin-bottom:5px;
+                        }
+                        .amount{
+                            color:#9eacbf;
+                            font-size:16px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .handleArea{
+                    width:357px;
+                    margin:auto;
+                    a{
+                        float:left;
+                        display: block;
+                        color:#fff;
+                        font-size:12px;
+                        text-align: center;
+                        width:113px;
+                        height:30px;
+                        line-height: 30px;
+                        border-radius:5px;
+                        border:#7c7b7f solid 1px;
+                        margin:22px 0;
+                    }
+                    .call{
+                        margin:22px 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+.incomeTrend{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:1100px;
+    height:530px;
+    background: #202427;
+    z-index: 10001;
+    margin: auto;
+    box-shadow: 0 0 8px rgba(22,5,7,0.3);
+    font-size: 14px;
+    border: 1px solid #5d6c78;
+    .r-select{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #5d6c78;
+        .series{
+            float: right;
+            width: 80px;
+            height: 23px;
+            padding-right: 15px;
+            line-height: 23px;
+            text-align: right;
+            cursor: pointer;
+            background: #374148;
+            color: #fff;
+            font-size: 12px;
+            border: 1px solid #5a6975;
+            border-radius: 4px;
+            margin: 8px 12px 0 0;
+            position: relative;
+            i{  
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 1px;
+                left:11px;
+                background: url(http://s.xnimg.cn/external/matrix/images/series.png) no-repeat;
+                background-position: -4px 0;
+            }
+            i.log{
+                background-position: -33px 0;
+            }
+            i.per{
+                background-position: -60px -1px;
+            }
+        }
+        .percentSeries{
+            width: 92px;
+        }
+        .active{
+            color:#7ab4fa;
+            i{
+                background-position: -4px -19px;
+            }
+            i.log{
+                background-position: -33px -19px;
+            }
+            i.per{
+                background-position: -60px -20px;
+            }                
+        }
+    }
+    .invest-close{
+        width: 24px;
+        height:24px;
+        float: right;
+        margin-top: -30px;
+        cursor: pointer;
+        background-image: url(http://s.xnimg.cn/external/matrix/images/invest-close.png)
+    }
+    .time-select{
+        position: absolute;
+        left: 200px;
+        li{
+            width: 50px;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 12px;
+            line-height: 40px;
+            float: left;
+            color: #9eacbf;
+            text-align: center;
+            margin-right: 10px;
+            cursor: pointer;
+            &.active{
+                color: #7ab4fa;
+                border-bottom: 3px solid #7ab4fa;
+            }
+        }
+    }
+    .compare-select{
+        position: absolute;
+        left: 5px;
+        width: 156px;
+        height: 23px;
+        line-height: 23px;
+        padding-left: 12px;
+        text-align: left;
+        margin: 8px 12px 0 0;
+        cursor: pointer;
+        background: #374148;
+        color: #fff;
+        font-size: 12px;
+        border: 1px solid #5a6975;
+        border-radius: 4px;
+        z-index: 1;
+        i.icon-down{
+            position: absolute;
+            width: 11px;
+            height: 6px;
+            top: 8px;
+            right: 10px;
+            background: url(http://s.xnimg.cn/external/matrix/images/images1.png) no-repeat;
+            background-position: -233px -103px;
+        }
+    }
+}

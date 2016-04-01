@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	font-family: microsoft YaHei;
+	background: -webkit-linear-gradient(left ,#5c6977,#455665); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(left top,#5c6a77,#304050); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(left top,#5c6a77,#304050); /* Firefox 3.6 - 15 */
+	background: linear-gradient(left top,#5c6a77,#304050); /* 标准的语法（必须放在最后） */
+	font-size: 0.26rem;
+	color:#ddd;
+	opacity: 0;
+
+}
+.poster{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+.form{
+	margin: 0 auto 0.4rem;
+	width: 6rem;
+	height: 7.2rem;
+	background-color: #4c5b6b;
+	border-radius: 0.05rem;
+	.title{
+		width: 6rem;
+		height: 0.8rem;
+		background-color: #627686;
+		font-size: 0.30rem;
+		text-align: center;
+		line-height: 0.8rem;
+		border-radius: 0.05rem 0.05rem 0 0;
+		color:#fff;
+	}
+	.applyForm{
+		background-color: #546676;
+		height: 4.05rem;
+	}
+	.line{
+		width: 5.4rem;
+		height: 0.8rem;
+		margin: 0 auto;
+		line-height: 0.8rem;
+		border-bottom: solid 0.02rem #4c5e6e;
+		input{
+			border: none;
+			height: 0.4rem;
+			width: 3rem;
+			line-height: 0.4rem;
+			background: none;
+			font-size: 0.26rem;
+			color: #eeeeee;
+		}
+	}
+	.noline{
+		border: none;
+	}
+	.apply{
+		display: block;
+		margin: 0.4rem auto 0.3rem;
+		width: 5.4rem;
+		height: 0.8rem;
+		background: #f14e4e;
+		border: none;
+		border-radius: 0.06rem;
+		font-weight: bold;
+		text-align: center;
+		p{
+			font-size: 0.34rem;
+			font-family: microsoft YaHei;
+			color:#eee;
+			height: 0.8rem;
+			line-height: 0.8rem;
+		}
+	}
+	p{
+		font-size:0.2rem;
+		color: #8a9fb7;
+		text-align: center;
+		a{
+			text-decoration: none;
+			color:#f14e4e;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		}
+	}
+}
+.footer{
+	height:  0.4rem;
+	p{
+		height: 0.3rem;
+		text-align: center;
+		font-size: 0.2rem;
+		color:#8a9fb5;
+		background: url(http://s.xnimg.cn/external/matrix/images/tel.png) no-repeat;
+		background-position: 1.7rem;
+		line-height: 0.3rem;
+	}		
+}
+.toast{
+	position: absolute;
+	width: auto;
+	max-width: 3.4rem;
+	top:5rem;
+	left: 50%;
+	-webkit-transform:translate3d(-50%,-50%,0);
+	padding:0.4rem 0.5rem;
+	background: rgba(0,0,0,.8);
+	border-radius: 0.12rem;
+	z-index: 10001;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+}

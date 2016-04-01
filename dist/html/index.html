@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MATRIX - 首页</title>
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link type="text/css" rel="stylesheet" href="http://s.xnimg.cn/external/matrix/newCss/base.css">
+	<link type="text/css" rel="stylesheet"  href="http://s.xnimg.cn/external/matrix/css/matrixIndex.css">
+</head>
+<body id="m-index">
+	<!--头部banner 开始-->
+	<div id="header" class="clearfix">
+		<div class="left">
+			<a href="/fund/home"></a>
+			<img class="bank" src="http://s.xnimg.cn/external/matrix/images/nonghang.png">
+		</div>
+		<div class="right">
+			<ul>
+				<li class="compare icon">基金对比</li>
+				<li class="filter icon">基金筛选</li>
+				<li class="down-data icon">数据下载</li>
+			</ul>
+			<div class="box">
+				<a href="#" class="user icon">魏征</a>
+				<span class="line"></span>
+				<a href="#" class="loginout">退出</a>
+			</div>
+		</div>
+	</div>
+	<!--头部banner 结束-->
+
+	<div id="main-wrap" class="clearfix">
+		<!--左侧菜单 开始-->
+		<ul id="left-menu">
+			<li class="trend active">基金行情</li>
+			<li class="manager">基金经理</li>
+			<li class="choice">自选</li>
+			<li class="hold">基金持仓</li>
+		</ul>
+		<!--左侧菜单 结束-->
+
+		<div class="main">
+			<div class="left-filter">
+				<div class="f-box">
+					<div class="f-title">基本信息</div>
+					<div class="label-input">
+						<label>基金代码</label>
+						<input type="text" maxlength="10" placeholder="请输入基金代码" class="i-fund-code">
+					</div>
+					<div class="label-input">
+						<label>基金名称</label>
+						<input type="text" placeholder="请输入基金名称" class="i-fund-name">
+					</div>
+					<div class="label-input">
+						<label>基金公司</label>
+						<input type="text" placeholder="请输入基金公司代码" class="i-fund-corp-code">
+					</div>
+					<div class="label-input">
+						<label>基金经理</label>
+						<input type="text" placeholder="请输入基金经理名称" class="i-fund-manager">
+					</div>
+					<div class="label-input select">
+						<label>基金类型</label>
+						<select>
+							<option value="0">货币型</option>
+							<option value="1">股票型</option>
+						</select>
+					</div>
+					<div class="label-input double-input">
+						<label>万份收益</label>
+						<div class="d-i">
+							<span>超过</span>
+							<input type="text" class="input-short">
+							<span>少于</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+				</div>
+				<div class="f-box">
+					<div class="f-title">基金经理</div>
+					<div class="label-input">
+						<label>基金经理</label>
+						<input type="text" placeholder="请输入基金经理名称" class="i-fund-manager">
+					</div>
+					<div class="label-input double-input">
+						<label>从业时间</label>
+						<div class="d-i">
+							<span>超过</span>
+							<input type="text" class="input-short">
+							<span>少于</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>经理学历</label>
+						<div class="l-s">
+							<select class="s-short oversea">
+								<option value="0">非海归</option>
+								<option value="1">海归</option>
+							</select>
+							<select class="s-short education">
+								<option value="0">本科</option>
+								<option value="1">硕士</option>
+								<option value="2">博士</option>
+							</select>
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>管理规模</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">2015Q4</option>
+								<option value="1">2015Q3</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+				</div>
+				<div class="f-box">
+					<div class="f-title">收益相关</div>
+					<div class="label-input select">
+						<label>阶段涨幅</label>
+						<div class="l-s">
+							<select class="s-short rate">
+								<option value="0">日涨幅</option>
+								<option value="1">月涨幅</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>Sharp</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">近1个月</option>
+								<option value="1">近3个月</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+				</div>
+				<div class="f-box">
+					<div class="f-title">风险相关</div>
+					<div class="label-input select">
+						<label>波动率</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">近1个月</option>
+								<option value="1">近3个月</option>
+							</select>
+							<span>少于</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>最大回撤</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">近1个月</option>
+								<option value="1">近3个月</option>
+							</select>
+							<span>少于</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+				</div>
+				<div class="f-box">
+					<div class="f-title">其他指标</div>
+					<div class="label-input select">
+						<label>基金规模</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">2015Q4</option>
+								<option value="1">2015Q3</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>择时损益</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">2015Q4</option>
+								<option value="1">2015Q3</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+					<div class="label-input select">
+						<label>资产贡献</label>
+						<div class="l-s">
+							<select class="s-short quater">
+								<option value="0">2015Q4</option>
+								<option value="1">2015Q3</option>
+							</select>
+							<span>超过</span>
+							<input type="text" class="input-short">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="r-table">
+				<div class="data-table">
+					<table>
+						<thead>
+							<tr>
+								<th>基金</th>
+								<th colspan="4">收益指标</th>
+								<th colspan="2">风险指标</th>
+								<th>流动性</th>
+								<th>机构青睐</th>
+								<th colspan="2">基金评级</th>
+								<th></th>
+							</tr>
+							<tr>
+								<th>基金名称</th>
+								<th class="sort-down cursor">一个月<i class="sort-icon"></i></th>
+								<th class="sort-up cursor">三个月<i class="sort-icon"></i></th>
+								<th class="cursor">近一年<i class="sort-icon"></i></th>
+								<th class="cursor">夏普指数<i class="sort-icon"></i></th>
+								<th class="cursor">波动率<i class="sort-icon"></i></th>
+								<th class="cursor">最大回撤<i class="sort-icon"></i></th>
+								<th class="cursor">基金规模<i class="sort-icon"></i></th>
+								<th class="cursor">机构持仓比例<i class="sort-icon"></i></th>
+								<th class="cursor">晨星评级<i class="sort-icon"></i></th>
+								<th class="cursor">银河评级<i class="sort-icon"></i></th>
+								<th class="no-ti">自选</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-5"></i></td>
+								<td class="btn-watch"><i class="watching"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+							<tr>
+								<td><a href="/" target="_blank">博时天天增利货币B</a></td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.26%</td>
+								<td>0.6847</td>
+								<td>0.34%</td>
+								<td>－</td>
+								<td>665.25亿</td>
+								<td>96.26%</td>
+								<td><i class="star s-0"></i></td>
+								<td><i class="star s-3"></i></td>
+								<td class="btn-watch"><i class="watchit"></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="chart-tab">
+					<div class="tabs">净值走势</div>
+					<i class="tabs-icon up"></i>
+				</div>
+				<div class="m-charts">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--底部footer 开始-->
+	<div id="footer" class="clearfix">
+		<div class="connect">
+			<p class="phone">400-818-1788</p>
+			<p class="email">service@sofund.com</p>
+		</div>
+		<div class="right">Copyright&copy;&nbsp;2014-2015&nbsp;&nbsp;人人金服版权所有&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">关于人人金服
+		    </a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">常见问题</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="follow-wx">关注微信</a>
+		</div>
+	</div>
+	<!--底部footer 结束-->
+</body>
+</html>

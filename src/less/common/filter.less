@@ -1,0 +1,264 @@
+/* 基金筛选样式 */
+//2016.03.03
+.selBox{
+	position:fixed;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background:#202427;
+	z-index:10001;
+	box-shadow:0 0 8px rgba(22,5,7,0.3);
+	width:450px;
+	height: 660px;
+	border-radius: 0 0 4px 4px;
+	input,select{color: #fff;}
+	.selBoxTitle{
+		height:50px;
+		line-height:50px;
+		color:#fff;
+		font-size:16px;
+		padding:0 25px;
+		font-weight: bold;
+		background:#56636b;
+		border-radius: 4px 4px 0 0;
+		.shai{
+			display: inline-block;
+			text-align:left;
+		}
+		.selIcon{
+			width:18px;
+			height:18px;
+			background:url(http://s.xnimg.cn/external/matrix/images/icon_list.png);
+			background-position: -1px -3px;
+		}
+		.boxClose{
+			display: block;
+			float:right;
+			margin-top:16px;
+			background-position: -1px -71px;
+			cursor:pointer;
+		}
+	}
+	.selContent{
+		height:540px;
+		overflow-y: auto;
+		margin:0 auto;
+		&::-webkit-scrollbar{
+			width: 12px;
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 8px;
+			background-color: #56636b;
+			border-radius: 6px;
+			border: 2px solid transparent;
+			background-clip: content-box;
+		}
+		li{
+			position: relative;
+			color: #6e7886;
+			font-size:12px;
+			margin-top: 40px;
+			padding: 26px 30px 0;
+			border-top:1px solid #374148;
+			h3{
+				display: block;
+				position: absolute;
+				top:-10px;
+				left: 0;
+				width:96px;
+				height: 30px;
+				text-align: right;
+				font-weight: bold;
+				color:#fff;
+				font-size:14px;
+				box-sizing: border-box;
+				padding-right: 8px;
+				background: #202427;
+			}
+			.baseLine{
+				height:30px;
+				line-height: 30px;
+				margin-bottom: 12px;
+			}
+			input{
+				text-indent:8px;
+			}
+			label{
+				margin-right:8px;
+			}
+			input,select {
+				border:none;
+				outline: none;
+				background: #374148;
+				border-radius: 5px;
+				display: inline-block;
+				width: 300px;
+				height: 30px;
+				font-size: 12px;
+				border: 1px solid #5d6c78;
+				border-radius: 4px;
+			}
+			input::-webkit-input-placeholder {
+			    color: #5d6c78;
+			}
+			input:-moz-placeholder {
+			    color: #5d6c78;
+			}
+			select{
+				color:#fff;
+			}
+			.twoInput{
+				span{
+					display: inline-block;
+					margin-right:8px;
+				}
+				label{
+					margin-right: 0;
+					color: #fff;
+				}
+				input{
+					display: inline-block;
+					width:118px;
+					height:30px;
+					margin-right: 2px;
+				}
+				select{
+					display: inline-block;
+					width:148px;
+					margin-right: 2px;
+					height:30px;
+				}
+			}
+		}
+	}
+	.managerCont{
+		display: none;
+	}
+	.handleBtn{
+		margin:15px 0;
+		.canc{
+			float:right;
+			width:100px;
+			height:40px;
+			border-radius: 4px;
+			line-height: 40px;
+			font-size: 14px;
+			color: #fff;
+			text-align: center;
+			background: #56636b;
+		}
+		.sub{
+			float:right;
+			width:160px;
+			height:40px;
+			border-radius:4px;
+			line-height: 40px;
+			font-size:14px;
+			color:#fff;
+			text-align:center;
+			background: #f14e4e;
+			margin:0 20px;
+		}
+	}
+}
+/****联系客服****/ 
+.contactBox{
+	position:fixed;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background:#202427;
+	z-index:10001;
+	box-shadow:0 0 8px rgba(22,5,7,0.3);
+	width:460px;
+	height: 330px;
+	border-radius: 0 0 4px 4px;
+	.cTitle{
+		height:50px;
+		line-height:50px;
+		color:#fff;
+		font-size:16px;
+		padding:0 25px;
+		font-weight: bold;
+		background:#56636b;
+		border-radius: 4px 4px 0 0;
+		.cTitleText{
+			display: inline-block;
+			text-align:left;
+		}
+		.cIcon{
+			width:18px;
+			height:18px;
+			background:url(http://s.xnimg.cn/external/matrix/images/icon_list.png);
+			background-position: -1px -3px;
+		}
+		.cBoxClose{
+			display: block;
+			float:right;
+			margin-top:16px;
+			background-position: -1px -71px;
+			cursor:pointer;
+		}
+	}
+	.serverArea{
+		width: 100%;
+		height: 280px;
+		box-sizing: border-box;
+		padding: 40px 0;
+		padding-left: 56px;
+		.serverBox{
+			position: relative;
+			width: 100%;
+			height: 50%;
+			&.border-b{
+				border-bottom: 1px solid #374148;;
+			}
+			.tag-s{position: absolute;color: #fff;}
+			.s-name{
+				font-size: 24px;
+				font-weight: bold;
+				top:18px;
+				left: 0;
+			}
+			.s-title{
+				font-size: 16px;
+				font-weight: bold;
+				top:18px;
+				left: 56px;
+			}
+			.s-contact{
+				font-size: 12px;
+				left: 56px;
+				&.phoneNum{
+					top:42px;
+				}
+				&.mailAddr{
+					top:60px;
+				}
+			}
+			.s-mail{
+				width: 36px;
+				height: 36px;
+				background: url(http://s.xnimg.cn/external/matrix/images/sMail.png) no-repeat;
+				top:40px;
+				left: 292px;
+			}
+		}
+	}
+}
+
+/****联系客服－－end****/
+.mask{
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}

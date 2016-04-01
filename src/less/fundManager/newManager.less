@@ -1,0 +1,291 @@
+//2016.03.03 
+#manager{
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #56636b;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+    background: #282e33;
+    margin: 60px 0 0 90px;
+    color: #fff;
+    background: #282e33;
+    overflow: hidden;
+    .typeBy{
+        padding:20px 0 10px 18px;
+        font-size:12px;
+        .types{
+            width: 1020px;
+            margin-bottom:10px;
+            label{
+                float:left;
+                padding:2px;
+                color: #9eacbf;
+                line-height: 18px;
+            }
+            ul{
+                float:left;
+                text-align: justify;
+                li{
+                    float:left;
+                    margin-right:8px;
+                    padding:4px;
+                    color: #6e7886;
+                    &:hover{
+                        color:#7ab4fa;
+                        cursor:pointer;
+                    }
+                }
+                li.typeAll{
+                    color:#7ab4fa;
+                }
+                li.active{
+                    color:#7ab4fa;
+                }
+            }
+            #company{
+                border: 1px solid #a1adbe;
+                background-color: #32393c;
+                border-radius: 5px;
+                padding: 5px;
+                width: 820px;
+                height: 45px;
+                overflow:hidden;
+                position: relative;
+                left: 65px;
+                top: 5px;
+                display: none;
+               
+            }
+            .moreCompany{
+                display: inline;
+                width: 38px;
+                height: 15px;
+                border: 1px solid #a1adbe;
+                border-radius: 5px;
+                color: #a1adbe;
+                cursor:pointer;
+                float: right;
+                font-size: 12px;
+                padding: 4px 12px;
+                background: url(http://s.xnimg.cn/external/matrix/images/down_Show.png) no-repeat;
+                background-position: 42px 9px;
+
+            }
+            .hideAll{
+                width: 870px;
+                height: 20px;
+                overflow: hidden;
+
+            }
+            .showAll{
+                border: 1px solid #a1adbe;
+                background-color: #32393c;
+                border-radius: 5px;
+                padding: 5px;
+                width: 870px;
+                height: 86px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar{
+                  width: 12px;
+              }
+              &::-webkit-scrollbar-thumb {
+                  width: 8px;
+                  background-color: #56636b;
+                  border-radius: 6px;
+                  border: 2px solid transparent;
+                  background-clip: content-box;
+              }
+          }
+      }
+  }
+  .tableWrap{position: relative;}
+  .table{
+        height: 762px;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+          width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            width: 8px;
+            background-color: #56636b;
+            border-radius: 6px;
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+        .origin-table{
+            width:100%;
+            font-size:12px;
+            color:#fff;
+            border-right:#616a76 solid 1px;
+            border-bottom:#616a76 solid 1px;
+            .hasRight{
+                border-right:#374148 solid 1px;
+            }
+            thead{
+                tr{
+                    height:40px;
+                    line-height: 40px;
+                }
+                .topLine{
+                    th{
+                        background: #202427;
+                        border-right:#374148 solid 1px;
+                    }
+                }
+                .botLine{
+                    th{
+                        background: #445058;
+                        border-right:#202427 solid 1px;
+                        &:hover{
+                            cursor:pointer;
+                        }
+                        &.active{
+                            color:#79b3f9;
+                        }
+                        .updown{
+                            display: inline;
+                            position: relative;
+                            .up{
+                                position: absolute;
+                                top:-2px;
+                                left:0;
+                                border-style:solid;
+                                border-color:transparent transparent #a0a0a0 transparent;
+                                border-width:4px 3.5px 4px 3.5px;
+                                &.active{
+                                    border-color:transparent transparent #79b3f9 transparent;
+                                }
+                            }
+                            .down{
+                                position: absolute;
+                                bottom:-2px;
+                                left:0;
+                                border-style:solid;
+                                border-color:#a0a0a0 transparent transparent transparent;
+                                border-width:4px 3.5px 4px 3.5px;
+                                &.active{
+                                    border-color:#79b3f9 transparent transparent transparent;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            tbody{
+                color: #9eacbf;
+                .oddBg{
+                    background: #292f33;
+                }
+                .eventBg{
+                    background: #202427;
+                }
+                tr{
+                    line-height: 30px;
+                    height:30px;
+                    &:hover{
+                        cursor:pointer;
+                        background: #343c42;
+                    }
+                }
+                td{
+                    padding-top:0;
+                    text-align: center;
+                }
+                td.name{
+                    color:#79b3f9;
+                }
+                .handle{
+                    display: inline-block;
+                    i.choose{
+                        margin-top:6px;
+                        float:left;
+                        display: inline-block;
+                        width:16px;
+                        height:16px;
+                        background: url(http://s.xnimg.cn/external/matrix/images/self.png);
+                        cursor:pointer;
+                        margin-right:8px;
+                    }
+                    i.cancelLogo{
+                        background-position: 0 0;
+                    }
+                    i.addLogo{
+                        background-position: 0 -32px;
+                    }
+                    a.add,a.cancel{
+                        display: inline-block;
+                        color:#9eacbf;
+                    }
+                }
+            }
+        }
+        .headFix{
+            width: 99.3%;
+            font-size:12px;
+            color:#fff;
+            border-right:#616a76 solid 1px;
+            border-bottom:#616a76 solid 1px;
+            .hasRight{
+                border-right:#374148 solid 1px;
+            }
+            thead{
+                tr{
+                    height:40px;
+                    line-height: 40px;
+                }
+                .topLine{
+                    th{
+                        background: #202427;
+                        border-right:#374148 solid 1px;
+                    }
+                }
+                .botLine{
+                    th{
+                        background: #445058;
+                        border-right:#202427 solid 1px;
+                        &:hover{
+                            cursor:pointer;
+                        }
+                        &.active{
+                            color:#79b3f9;
+                        }
+                        .updown{
+                            display: inline;
+                            position: relative;
+                            .up{
+                                position: absolute;
+                                top:-2px;
+                                left:0;
+                                border-style:solid;
+                                border-color:transparent transparent #a0a0a0 transparent;
+                                border-width:4px 3.5px 4px 3.5px;
+                                &.active{
+                                    border-color:transparent transparent #79b3f9 transparent;
+                                }
+                            }
+                            .down{
+                                position: absolute;
+                                bottom:-2px;
+                                left:0;
+                                border-style:solid;
+                                border-color:#a0a0a0 transparent transparent transparent;
+                                border-width:4px 3.5px 4px 3.5px;
+                                &.active{
+                                    border-color:#79b3f9 transparent transparent transparent;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

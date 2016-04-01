@@ -1,0 +1,251 @@
+//2016.03.03
+ /*** 对比弹框 ***/
+@compareBorder: 1px solid #4c5057;
+@lineBorder: 1px solid #30373b;
+@border-radius: 4px;
+.cutStr(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.iconSize(){
+    position: absolute;
+    width: 22px;
+    height: 22px;
+}
+#comapre-dialog{
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 915px;
+    height: 583px;
+    margin: auto;
+    color: #fff;
+    font-size: 12px;
+    z-index: 10001;
+    background: #202427;
+    border-bottom-right-radius: 5px;
+    .top{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        background: #56636b;
+        text-indent: 23px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        span.png{
+            .iconSize();
+            left: 20px;
+            top: 20px;
+        }
+        .search{
+            display: inline-block;
+            position: relative;
+            input{
+                padding-left: 20px;
+                display: inline-block;
+                font-size: 12px;
+                color: #ced6e1;
+                background-color: #4c575e;
+                border-style:none;
+                width: 285px;
+                height: 26px;
+                border-radius: 16px;
+            }
+            .search-btn{
+                position: absolute;
+                right: 0;
+                top: 7px;
+                height: 36px;
+                width: 50px;
+                background-position: 12px -259px;
+            }
+        }
+    }
+    span,a{display: inline-block;}
+    .png{background: url(http://s.xnimg.cn/external/matrix/images/icon_list.png) no-repeat;}
+    li{
+        list-style: none;
+        float: left;
+    }
+    .title{
+        height: 55px;
+        line-height: 55px;
+        padding-left: 36px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .left{
+        float: left;
+        width: 250px;
+        height: 533px;
+        background: #374148;
+        border-bottom-left-radius: 5px;
+        .list{
+            .item{width: 250px;}
+            .name{
+                position: relative;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-indent: 20px;
+                cursor: pointer;
+                color: #c2cad4;
+                font-size: 14px;
+                font-weight: bold;
+                border-bottom: @compareBorder;
+                &.active{background-color: #56636b}
+                span{
+                    .iconSize();
+                    top: 15px;
+                    right: 20px;
+                    background-position: 0 -165px;
+                    &.active{background-position: 0 -189px;}
+                }
+            }
+            ul {
+                display: none;
+                height: 313px;
+                overflow-y: auto;
+                &#type-list{display: block;}
+                li{
+                    cursor: pointer;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    text-indent: 30px;
+                    color: #8e96a1;
+                    border-bottom: 1px solid #5e656e;
+                    &:hover,&.active{background: #2f383e;}
+                }
+            }
+        }
+    }
+    .middle{
+        float: left;
+        width: 360px;
+        height: 533px;           
+        margin-left: 19px;
+        border-left: @lineBorder;
+        border-right: @lineBorder;
+        .fund-list{
+            width: 312px;
+            height: 460px;
+            overflow-y: auto;
+            padding-left: 35px;
+            &::-webkit-scrollbar{
+                width: 12px;
+            }
+            &::-webkit-scrollbar-thumb {
+                width: 8px;
+                background-color: #56636b;
+                border-radius: 6px;
+                border: 2px solid transparent;
+                background-clip: content-box;
+            }
+            li{
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                color: #b2bbc8;
+                .fund-name{
+                    float: left;
+                    width: 140px;
+                    .cutStr();
+                }
+                .fund-code{
+                    float: left;
+                    width: 68px;}
+                .add-compare{
+                    float: left;
+                    width: 72px;
+                    height: 28px;
+                    line-height: 28px;
+                    margin-top: 4px;
+                    text-align: center;
+                    color: #b2bbc8;
+                    background-color: #374148;
+                    border:1px solid #5d6c78;
+                    border-radius: @border-radius;
+                }
+            }
+        }
+    }
+    .right{
+        position: relative;
+        float: left;
+        width: 223px;
+        height: 500px;
+        padding: 0 30px 0 30px;
+        .title{padding-left: 0;}
+        .compare-list{
+            margin-top: -6px;
+            li{
+                position: relative;
+                width: 222px;
+                height: 28px;
+                line-height: 28px;
+                margin-top: 10px;
+                text-indent: 8px;
+                color: #b2bbc8;
+                background-color: #374148;
+                border-radius: @border-radius;
+                border:1px solid #5d6c78;
+                div{
+                    width: 190px;
+                    .cutStr();
+                }
+                .delete{
+                    .iconSize();
+                    top: 3px;
+                    right: 3px;
+                    cursor: pointer;
+                    background-position: 0 -112px;
+                }
+            }
+        }
+        .btn{
+            position: absolute;
+            width: 225px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            border-radius: @border-radius;
+            &.confirm{
+                bottom: 70px;
+                background: #f14e4e;
+            }
+            &.cancel{
+                bottom: 0;
+                background: #6b717b;
+            }
+        }
+    }
+    .close{
+        .iconSize();
+        top: 15px;
+        right: 15px;
+        background-position: 0 -72px;
+        cursor: pointer;
+    }
+}
+#mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    background: #000;
+    z-index: 1000;
+}

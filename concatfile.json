@@ -1,0 +1,119 @@
+{
+    "pkg": {
+        "dist/css/login.css": [
+            "src/less/login.less"
+        ],
+        "dist/css/base.css": [
+            "src/less/common/base.less",
+            "src/less/common/filter.less",
+            "src/less/common/compareDialog.less",
+            "src/less/common/downloadData.less"
+        ],
+        "dist/css/newManager.css": [
+            "src/less/fundManager/newManager.less"
+        ],
+        "dist/css/selfFundManager.css": [
+            "src/less/fundManager/selfFundManager.less"
+        ],
+        "dist/css/selfFund.css": [
+            "src/less/fund/selfFund.less"
+        ],
+        "dist/css/managerDetail.css": [
+            "src/less/fundManager/managerDetail.less"
+        ],
+        "dist/css/fundDetail.css": [
+            "src/less/common/dialog.less",
+            "src/less/common/jquery-ui.css",
+            "src/less/fund/fundDetail.less"
+        ],
+        "dist/css/fundHold.css": [
+            "src/less/common/dialog.less",
+            "src/less/common/jquery-ui.css",
+            "src/less/hold/fundHold.less"
+        ],
+        "dist/css/fundCompare.css": [
+            "src/less/fund/fundCompare.less"
+        ],
+        "dist/css/filterDetail.css": [
+            "src/less/common/filterDetail.less"
+        ],
+        "dist/css/index.css": [
+            "src/less/common/trend.less",
+            "src/less/index.less"
+        ],
+        "dist/css/signup.css": [
+            "src/less/h5/signup.less"
+        ],
+        "dist/js/signup.js": [
+            "src/coffee/h5/signup.coffee"
+        ],
+        "dist/js/libs.js":[
+            "src/libs/libs.js"
+        ],
+        "dist/js/libs/mustache.js": [
+            "src/libs/mustache.js"
+        ],
+        "dist/js/login.js": [
+            "src/coffee/login.coffee"
+        ],
+        "dist/js/base.js":[
+            "src/coffee/common/charts.coffee",
+            "src/coffee/common/tool.coffee",
+            "src/coffee/common/compareDialog.coffee",
+            "src/coffee/common/downloadData.coffee",
+            "src/coffee/common/filter.coffee",
+            "src/coffee/common/contact.coffee",
+            "src/coffee/common/init.coffee"
+        ],
+        "dist/js/newManager.js": [
+            "src/coffee/fundManager/newManager.coffee"
+        ],
+        "dist/js/selfFundManager.js": [
+            "src/coffee/fundManager/selfFundManager.coffee"
+        ],
+        "dist/js/selfFund.js": [
+            "src/coffee/fund/selfFund.coffee"
+        ],
+        "dist/js/searchFund.js": [
+            "src/coffee/fund/searchFund.coffee"
+        ],
+        "dist/js/managerDetail.js": [
+            "src/coffee/fundManager/fundManagerDetail.coffee",
+             "src/libs/highstock.js"
+        ],
+        "dist/js/fundHold.js": [
+            "src/libs/highstock.js",
+            "src/libs/jquery-ui.min.js",
+            "src/coffee/common/charts.coffee",
+            "src/coffee/hold/fundHold.coffee",
+            "src/coffee/hold/trendDialog.coffee"
+        ],
+        "dist/js/fundCompare.js": [
+            "src/libs/highstock.js",
+            "src/coffee/fund/fundCompare.coffee",
+            "src/coffee/fund/compareDialog.coffee"
+        ],
+        "dist/js/fund/fundDetail.js":[
+            "src/libs/jquery-ui.min.js",
+            "src/libs/highstock.js",
+            "src/libs/highcharts-more.js",
+            "src/coffee/common/trend.coffee",
+            "src/coffee/fund/fundDetail.coffee"
+        ],
+        "dist/js/index.js":[
+            "src/libs/highstock.js",
+            "src/libs/underscore-1.5.2.min.js",
+            "src/libs/jquery.scrollTableBody-1.0.0.js",
+            "src/coffee/common/trend.coffee",
+            "src/coffee/index.coffee"
+        ]
+
+    },
+
+    "ext": {
+        "ext/libs.js": {
+            "repo": "fed-core",
+            "uri": "dist/libs.js"
+        }
+    }
+}

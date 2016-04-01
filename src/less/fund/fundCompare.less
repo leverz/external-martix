@@ -1,0 +1,276 @@
+//2016.03.03
+@borderRight: solid 1px #30373b;
+@borderWeight: solid 5px #202427;
+#compare-main{
+	padding-bottom: 30px;
+	margin: 60px 0 0 90px;
+	padding-top: 1px;
+	.table-tab{
+		position: relative;
+        width: 100%;
+        height: 45px;
+        margin-top:10px;
+        background: #141618;
+        box-sizing: border-box;
+        border-bottom: 6px solid #616a76;
+        .table-tigs{
+        	color: rgb(86, 99, 107);
+        	display: inline-block;
+        	margin-left:178px;
+        	font-size: 12px;
+        	padding-top: 20px;
+        }
+        .tabs{
+            position: absolute;
+            width: 158px;
+            height: 36px;
+            bottom: -6px;
+            left: 16px;
+            line-height: 36px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            background: url(http://s.xnimg.cn/external/matrix/images/index-tabs.png) no-repeat;
+        }
+    }
+}
+/*** 表格公用 ***/
+table.compCell{
+	width:100%;
+	color: #fff;
+	text-align: center;
+	background:#999;
+	font-size: 12px;
+	border: 1px solid #5d6c78;
+	thead th{
+		height:60px;
+		font-weight: bold;
+		background:#445058;
+		border-right: @borderRight;
+		.ilogo{
+			display: inline-block;
+			width:19px;
+			height:19px;
+			margin-right:8px;
+			background:url(http://s.xnimg.cn/external/matrix/images/toBankTitle.png);
+		}
+	}
+	tbody tr{
+		background: #202427;
+		color: #9eacbf;
+		&:nth-child(even){background: #292f33;}
+		td{
+			height: 50px;
+			line-height: 50px;
+			border-right: @borderRight;
+		}
+	}
+	.borderNone{border:none;}
+	.borderWeight{border-top: @borderWeight;}
+}
+/*** 收益水平对比 ***/
+
+/*** 小图表 开始 ***/
+.chartsBox{
+	width: 100%;
+	color: #fff;
+	.minChart{
+		float: left;
+		width: 49.9%;
+		min-width: 590px;
+		border:1px solid #5d6c78;
+		border-top: none;
+		border-right: none;
+		&:nth-child(even){margin-right: 0;}
+		.chartNav{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			text-indent: 20px;
+			padding-right: 8px;
+			span {
+				font-size: 14px;
+				font-weight: bold;
+			}
+			a{display: none;}
+			.dataDownload {
+				margin-left:10px;
+				color:#3aa1f8;
+				font-size:12px;
+			}
+		}
+		.selectTime{
+			font-size:12px;
+			margin-top:10px;
+			float:right;
+			width: 100px;
+			margin-right: 8px;
+			color: #fff;
+		}
+		.chart{
+			width: 100%;
+			height: 205px;
+		}
+	}
+}
+/*** 小图表 结束 ***/
+
+/*** 大图表 开始 ***/
+.bigChart{
+	width:100%;
+	color:#fff;
+	border:1px solid #5d6c78;
+	border-top: none;
+	border-right: none;
+	.chartNav{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		text-indent: 20px;
+		padding-right: 8px;
+		span {
+			font-size: 14px;
+			font-weight: bold;
+		}
+		a{display: none;}
+		.dataDownload {
+			margin-left:10px;
+			color:#3aa1f8;
+			font-size:12px;
+		}
+	}
+	.selectTime{
+		font-size:12px;
+		margin-top:10px;
+		float:right;
+		width: 100px;
+		margin-right: 8px;
+		color: #fff;
+	}
+	.chart{
+		height:245px;
+	}
+}
+/*** 大图表 结束 ***/
+/*** 弹窗 开始 ***/
+.incomeTrend{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:1100px;
+    height:530px;
+    background: #202427;
+    z-index: 10001;
+    margin: auto;
+    box-shadow: 0 0 8px rgba(22,5,7,0.3);
+    font-size: 14px;
+    border: 1px solid #5d6c78;
+    .r-select{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #5d6c78;
+        .series{
+            float: right;
+            width: 80px;
+            height: 23px;
+            padding-right: 15px;
+            line-height: 23px;
+            text-align: right;
+            cursor: pointer;
+            background: #374148;
+            color: #fff;
+            font-size: 12px;
+            border: 1px solid #5a6975;
+            border-radius: 4px;
+            margin: 8px 12px 0 0;
+            position: relative;
+            i{  
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 1px;
+                left:11px;
+                background: url(http://s.xnimg.cn/external/matrix/images/series.png) no-repeat;
+                background-position: -4px 0;
+            }
+            i.log{
+                background-position: -33px 0;
+            }
+            i.per{
+                background-position: -60px -1px;
+            }
+        }
+        .percentSeries{
+            width: 92px;
+        }
+        .active{
+            color:#7ab4fa;
+            i{
+                background-position: -4px -19px;
+            }
+            i.log{
+                background-position: -33px -19px;
+            }
+            i.per{
+                background-position: -60px -20px;
+            }                
+        }
+    }
+    .invest-close{
+        width: 24px;
+        height:24px;
+        float: right;
+        margin-top: -30px;
+        cursor: pointer;
+        background-image: url(http://s.xnimg.cn/external/matrix/images/invest-close.png)
+    }
+    .time-select{
+        position: absolute;
+        left: 10px;
+        li{
+            width: 20px;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 12px;
+            line-height: 40px;
+            float: left;
+            color: #9eacbf;
+            text-align: center;
+            margin-right: 24px;
+            cursor: pointer;
+            &.active{
+                color: #7ab4fa;
+                border-bottom: 3px solid #7ab4fa;
+            }
+        }
+    }
+    .compare-select{
+        position: absolute;
+        left: 5px;
+        width: 156px;
+        height: 23px;
+        line-height: 23px;
+        padding-left: 12px;
+        text-align: left;
+        margin: 8px 12px 0 0;
+        cursor: pointer;
+        background: #374148;
+        color: #fff;
+        font-size: 12px;
+        border: 1px solid #5a6975;
+        border-radius: 4px;
+        z-index: 1;
+        i.icon-down{
+            position: absolute;
+            width: 11px;
+            height: 6px;
+            top: 8px;
+            right: 10px;
+            background: url(http://s.xnimg.cn/external/matrix/images/images1.png) no-repeat;
+            background-position: -233px -103px;
+        }
+    }
+}

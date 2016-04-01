@@ -1,0 +1,124 @@
+//2016.03.03
+@borderTop: 1px solid #666;
+#fund-content,
+#manager-content{
+    min-height: 500px;
+    margin: 60px auto 60px auto;
+    font-size: 12px;
+    color: #fff;
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #56636b;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+}
+table{
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: #141618;
+    thead{
+        th:nth-child(even){
+            background:#141618;
+        }
+        tr{
+            height: 50px;
+            border-top: @borderTop;
+            .backGrey{background: #141618;}
+            .backDark{background: #141618;}
+        }
+        .topLine{
+            th{
+                background: #202427;
+                border-right:#374148 solid 1px;
+            }
+        }
+        .botLine{
+            th{
+                background: #445058;
+                border-right:#202427 solid 1px;
+                &:hover{
+                    cursor:pointer;
+                }
+                &.active{
+                    color:#79b3f9;
+                }
+                .updown{
+                    display: inline;
+                    position: relative;
+                    margin-left: 1px;
+                    .up{
+                        position: absolute;
+                        top:-1px;
+                        left:0;
+                        border-style:solid;
+                        border-color:transparent transparent #a0a0a0 transparent;
+                        border-width:4px 3.5px 4px 3.5px;
+                        &.active{
+                            border-color:transparent transparent #79b3f9 transparent;
+                        }
+                    }
+                    .down{
+                        position: absolute;
+                        bottom:-3px;
+                        left:0;
+                        border-style:solid;
+                        border-color:#a0a0a0 transparent transparent transparent;
+                        border-width:4px 3.5px 4px 3.5px;
+                        &.active{
+                            border-color:#79b3f9 transparent transparent transparent;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    tbody{
+        height: 50px;
+        border-top: @borderTop;
+        tr:nth-child(even){background:#292f33;}
+        tr {
+            .hasRight{
+                border-right:#374148 solid 1px;
+            }
+            &:hover{
+                cursor:pointer;
+                background: #343c42;
+            }
+            .handle{
+                display: inline-block;
+                i.choose{
+                    margin-top:6px;
+                    float:left;
+                    display: inline-block;
+                    width:16px;
+                    height:16px;
+                    background: url(http://s.xnimg.cn/external/matrix/images/self.png);
+                    cursor:pointer;
+                    margin-right:8px;
+                }
+                i.cancelLogo{
+                    background-position: 0 0;
+                }
+                i.addLogo{
+                    background-position: 0 -32px;
+                }
+                a.add,a.cancel{
+                    display: inline-block;
+                    color:#9eacbf;
+                }
+            }
+            .chen1{background-position: 0 -50px;}
+            .chen2{background-position: 0 -100px;}
+            .chen3{background-position: 0 -150px;}
+            .chen4{background-position: 0 -200px;}
+            .chen5{background-position: 0 -250px;}
+        }
+    }
+}

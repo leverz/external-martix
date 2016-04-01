@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta contain="telephone=no" name="format-detection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+	<title>红人申请</title>
+	<link type="text/css" rel="stylesheet"  href="http://s.xnimg.cn/external/matrix/css/openAccount.css">
+</head>
+<body>
+	<div class="poster">
+		<img src="http://s.xnimg.cn/external/matrix/images/poster.jpg" alt="">
+	</div>
+	<div class="form">
+		<div class="title">欢迎使用MATRIX</div>
+		<div class="applyForm">
+			<div class='line'>
+				<span>真实姓名：</span>
+				<input class="name" type="text" placeholder="">            
+			</div>
+			<div class='line'>
+				<span>手机号码：</span>
+				<input class="tel" type="text" placeholder="">         
+			</div>
+			<div class='line'>
+				<span>协助申请人：</span>
+				<input class="partner" type="text" placeholder="">          
+			</div>
+			<div class='line'>
+				<span>公司邮箱：</span>
+				<input class="message" type="text" placeholder="">            
+			</div>
+			<div class='line noline'>
+				<span>机构名称：</span>
+				<input class="message" type="text" placeholder="">            
+			</div>
+			
+		</div>
+		<button class="apply">申请开户</button>
+		<p>已有Matrix账户？请登录<a href="">Matrix.sofund.com</a>体验我们的服务</p>
+	</div>
+	<div class="footer">
+		<p><i></i>客服热线:400-818-1788</p>
+	</div>
+	<script src='http://s.xnimg.cn/ajax/zepto/zepto-1.1.0.all.min.js'></script>
+	<script src='http://s.xnimg.cn/external/matrix/js/openAccount.js'></script>
+	<script type="text/javascript">
+	;(function(){
+	window.onresize = r;
+	function r(resizeNum){
+		var winW = window.innerWidth;
+		document.getElementsByTagName("html")[0].style.fontSize=winW*0.15625+"px";
+		if(winW>window.screen.width&&resizeNum<=10){
+			setTimeout(function(){
+				r(++resizeNum)
+			}, 100);
+		}
+		else{
+			document.getElementsByTagName("body")[0].style.opacity = 1;
+		}
+	}
+	setTimeout(function(){r(0)}, 100)
+	})();
+	
+	</script>
+</body>
+</html>

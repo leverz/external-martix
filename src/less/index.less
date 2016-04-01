@@ -1,0 +1,310 @@
+//2016.03.03
+.cursor{cursor: pointer;}
+#m-index{
+	overflow-y: hidden;
+}
+#m-index .main{
+	overflow: hidden;
+	margin: 60px 0 0 90px;
+	.left-filter{
+		display: inline-block;
+		float: left;
+		width: 280px;
+		float: left;
+		background: #282e33;
+		padding-top: 30px;
+		border-right: 1px solid #616a76;
+		overflow-y: scroll;
+		&::-webkit-scrollbar{
+			width: 12px;
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 8px;
+			background-color: #56636b;
+			border-radius: 6px;
+			border: 2px solid transparent;
+			background-clip: content-box;
+		}
+		.f-box{
+			display: block;
+			position: relative;
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			padding:24px 20px;
+			border-top: 1px solid #374148;
+			.f-title{
+				display: block;
+				position: absolute;
+				width: 82px;
+				height: 24px;
+				top:-12px;
+				left: 0;
+				line-height: 24px;
+				font-size: 14px;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+				text-indent: 15px;
+				background: #282e33;
+			}
+			.label-input{
+				height: 26px;
+				margin-bottom: 10px;
+				label{
+					height: 26px;
+					line-height: 26px;
+					font-size: 12px;
+					color: #6e7886;
+				}
+				input{
+					float: right;
+					width: 165px;
+					height: 26px;
+					font-size: 12px;
+					color: #9eacbf;
+					font-weight: bold;
+					box-sizing: border-box;
+					padding:6px 12px;
+					border:1px solid #5d6c78;
+					border-radius: 4px;
+					&.input-short{
+						width: 50px;
+						float: none;
+						padding:6px 6px;
+					}
+				}
+				input::-webkit-input-placeholder {
+				    color: #5d6c78;
+				}
+				input:-moz-placeholder {
+				    color: #5d6c78;
+				}
+				span{
+					display: inline-block;
+					height: 26px;
+					line-height: 26px;
+					font-size: 12px;
+					color: #fff;
+				}
+				&.select{
+					.l-s{
+						display: inline-block;
+						float: right;
+					}
+					select{
+						width: 165px;
+						height: 26px;
+						float: right;
+						cursor: pointer;
+						color: #fff;
+						border:1px solid #5d6c78;
+						&.s-short{
+							width: 80px;
+							float: none;
+						}
+						&.education{
+							float: right;
+							margin-left: 6px;
+						}
+					}
+				}
+				&.double-input{
+					.d-i{
+						float: right;
+					}
+				}
+			}
+		}
+		.submit-filter{
+			width: 88px;
+			height: 30px;
+			font-size: 12px;
+			line-height: 30px;
+			margin: 0 auto 20px;
+		}
+	}
+	.right{
+		overflow: hidden;
+		position: relative;
+		background: #141618;
+		.data-table{
+			width: 100%;
+			background:#141618;
+			height: 600px;
+			overflow-y: scroll;
+			border-bottom: 1px solid #616a76;
+			&::-webkit-scrollbar{
+				width: 12px;
+			}
+			&::-webkit-scrollbar-thumb {
+				width: 8px;
+				background-color: #56636b;
+				border-radius: 6px;
+				border: 2px solid transparent;
+				background-clip: content-box;
+			}
+			.origin-table{
+				display: table;
+				width: 100%;
+				background: #202427;
+				th{
+					height: 42px;
+					font-size: 12px;
+					color: #fff;
+					font-weight: bold;
+				}
+				tr:nth-child(1){
+					th{
+						border-right: 1px solid #374148;
+					}
+				}
+				tr:nth-child(2){
+					th{
+						position: relative;
+						background: #445058;
+						border-right: 1px solid #202427;
+						text-indent: -7px;
+						&.no-ti{
+							text-indent: 0px;
+						}
+						i.sort-icon{
+							position: absolute;
+							top:2px;
+							margin-left: 2px;
+							width: 7px;
+							height: 40px;
+							background: url(http://s.xnimg.cn/external/matrix/images/sort-icon.png) no-repeat;
+						}
+						&.sort-up{
+							color: #7ab4fa;
+							i.sort-icon{
+								background: url(http://s.xnimg.cn/external/matrix/images/sort-icon_up.png) no-repeat;
+							}
+						}
+						&.sort-down{
+							color: #7ab4fa;
+							i.sort-icon{
+								background: url(http://s.xnimg.cn/external/matrix/images/sort-icon_down.png) no-repeat;
+							}
+						}
+					}
+				}
+				tbody{
+					tr:nth-of-type(odd){
+						background: #202427;
+					}
+					tr:nth-of-type(even){
+						background: #292f33;
+					}
+					tr{
+						cursor: pointer;
+						td{
+							height: 30px;
+							border-right: 1px solid #374148;
+							text-align: center;
+							font-size: 12px;
+							color: #9eacbf;
+							i.star{
+								display: block;
+								margin:0 auto;
+								width: 70px;
+								height: 30px;
+								background: url(http://s.xnimg.cn/external/matrix/images/star5.png) no-repeat;
+								&.s-0{
+									background-position: 2px -10px;
+								}
+								&.s-1{
+									background-position: 2px -62px;
+								}
+								&.s-2{
+									background-position: 2px -111px;
+								}
+								&.s-3{
+									background-position: 2px -160px;
+								}
+								&.s-4{
+									background-position: 2px -260px;
+								}
+								&.s-5{
+									background-position: 2px -310px;
+								}
+							}
+							&.btn-watch{
+								cursor: pointer;
+								i{
+									display: block;
+									width: 16px;
+									height: 16px;
+									margin: 0 auto;
+									&.watchit{
+										background: url(http://s.xnimg.cn/external/matrix/images/watch.png) no-repeat;
+										&:hover{
+											background: url(http://s.xnimg.cn/external/matrix/images/watchit_hover.png) no-repeat;
+										}
+									}
+									&.watching{
+										background: url(http://s.xnimg.cn/external/matrix/images/watching.png) no-repeat;
+										&:hover{
+											background: url(http://s.xnimg.cn/external/matrix/images/watching_hover.png) no-repeat;
+										}
+									}
+								}
+							}
+						}
+						&:hover{
+							background-color: #343c42!important;
+						}
+					}
+				}
+			}
+			.headFix{
+				display: table;
+				width: 99.1%;
+				background: #445058;
+				th{
+					height: 42px;
+					font-size: 12px;
+					color: #fff;
+					font-weight: bold;
+				}
+				tr:nth-child(1){
+					th{
+						border-right: 1px solid #374148;
+					}
+				}
+				tr:nth-child(2){
+					th{
+						position: relative;
+						background: #445058;
+						border-right: 1px solid #202427;
+						text-indent: -7px;
+						&.no-ti{
+							text-indent: 0px;
+						}
+						i.sort-icon{
+							position: absolute;
+							top:2px;
+							margin-left: 2px;
+							width: 7px;
+							height: 40px;
+							background: url(http://s.xnimg.cn/external/matrix/images/sort-icon.png) no-repeat;
+						}
+						&.sort-up{
+							color: #7ab4fa;
+							i.sort-icon{
+								background: url(http://s.xnimg.cn/external/matrix/images/sort-icon_up.png) no-repeat;
+							}
+						}
+						&.sort-down{
+							color: #7ab4fa;
+							i.sort-icon{
+								background: url(http://s.xnimg.cn/external/matrix/images/sort-icon_down.png) no-repeat;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
